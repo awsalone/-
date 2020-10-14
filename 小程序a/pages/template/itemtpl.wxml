@@ -1,0 +1,9 @@
+<template name="future-item">
+  <view class="future-item">
+    <view>{{item.week}}</view>
+    <view>{{item.wea}}</view>
+    <view>{{item.win.length===1?item.win[0]:item.win.split('/')}}{{item.win_speed}}</view>
+    <view>低温{{item.tem2}}</view>
+    <view>高温{{item.tem1}}</view>
+  </view>
+</template>

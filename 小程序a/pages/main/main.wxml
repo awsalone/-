@@ -1,0 +1,17 @@
+<view class="content">
+  <view class="today">
+    <view class="info">
+      <view class="temp"> {{weather.tem2}} </view>
+      <view class="weather">{{weather.wea}}\t\r\t\r\t{{weather.win.length===1?weather.win[0]:weather.win.splice('/')}}{{weather.win_speed}} </view>
+      <view> 友情提示：{{weather.air_tips}}</view>
+      <view class="city">{{city}}</view>
+    </view>
+  </view>
+<import src='../template/itemtpl.wxml' />
+  <view class="future">
+    <block wx:for="{{future}}">
+        <template is='future-item' data="{{item}}"></template>
+    </block>
+  </view>
+
+</view>
